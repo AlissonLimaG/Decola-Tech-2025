@@ -1,3 +1,6 @@
 [submodule "DecolaTech-Desafio-1"]
 	path = DecolaTech-Desafio-1
 	url = https://github.com/AlissonLimaG/DecolaTech-Desafio-1.git
+[submodule "DecolaTech-Desafio-2"]
+	path = DecolaTech-Desafio-2
+	url = https://github.com/AlissonLimaG/DecolaTech-Desafio-2.git
