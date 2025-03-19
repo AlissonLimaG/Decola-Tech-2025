@@ -1,0 +1,16 @@
+<h1>DIRETIVAS DE ESTRUTURA</h1>
+<app-card *ngIf="appCardVisible; else template"></app-card>
+<ng-template #template>
+  OI, SE EU APARECI "appCardVisible" É FALSO!
+</ng-template>
+
+<hr>
+<h1>DIRETIVAS DE ATRIBUTO</h1>
+<app-comp-atributos>
+
+  <h2>EU VIM DO APP COMPONENT</h2>
+  <p>EU TAMBÉM VIM DO APP COMPONENT</p>
+
+</app-comp-atributos>
+
+<router-outlet></router-outlet>

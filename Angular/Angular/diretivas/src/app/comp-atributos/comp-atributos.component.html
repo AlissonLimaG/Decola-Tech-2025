@@ -1,0 +1,30 @@
+<h2>Usando 'ngClass'</h2>
+<p [ngClass]="disable" >ESTOU {{disable}}</p>
+<button (click)="siwtchCLass()">SwitchClass</button>
+
+<p [ngClass]= "isDisable ?'enable' :'disable'" >isDisable é {{isDisable}}</p>
+<button (click)="switchBoolean()">SwitchClass</button>
+
+<h2>Usando 'ngStyle'</h2>
+<p [ngStyle]="{'color':corTexto, 'background':corFundo}">Alterando estilo</p>
+
+<h2>Usando 'ngModel'</h2>
+<input type="text" [(ngModel)]="nome">
+<button (click)="adicionarNome()">Adicionar</button>
+
+<p>Lista de nomes: {{nomes.join(', ')}}</p>
+
+<h2>Usando ngtemplate e ngcontainer</h2>
+
+<ng-container *ngIf="visible; else template">
+    <p>OI, ng container aqui >D</p>
+</ng-container>
+
+<ng-template #template>
+    <p>OI,ng template aqui >D</p>
+</ng-template>
+
+<button (click)="switch()">Troca template</button>
+
+<ng-content select="h2"></ng-content>
+
