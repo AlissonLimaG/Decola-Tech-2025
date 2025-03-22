@@ -1,0 +1,44 @@
+.card{
+    padding: 1rem;
+    border: 1px solid black;
+    width: max-content;
+    height: 350px;
+    width: 250px;
+    background-color: #232323;
+    border-radius: 10px;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+
+    & .card_title{
+        color: whitesmoke;
+    }
+
+    & .card_body{
+        background-color: #616161;
+        width: 90%;
+        height: 80%;
+    }
+
+    & .stats_container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    & .card_stats{
+        border-radius: 4px;
+        text-align: center;
+        width: 50px;
+        margin-top: 0.7rem;
+        padding: 0;
+        background-color: rgb(226, 114, 39);
+    }
+
+    & .card_stats_attribute{
+        font-size: 0.8rem;
+    }
+}
